@@ -1,0 +1,24 @@
+* what is debouncing technique  and why it useful ?
+
+- Debouncing is a technique to control the rate at which a function executes in response to frequent events like keystrokes, scrolling, or resizing. It ensures the function runs only after the event stops firing for a specified delay.
+
+-Why Use Debouncing?
+
+1-Improves Performance: Prevents excessive function calls, saving resources.
+2-Enhances User Experience: Avoids jittery behavior caused by rapid event triggers.
+3-Common Use Cases:
+   Typing in a search bar (trigger after pause).
+   Resizing the window (trigger after resizing stops).
+   Scrolling (trigger analytics or lazy-loading).
+
+
+
+
+
+
+* if i have state and i want to add another value how can i do that ?
+
+To add a new value to a state in JavaScript:
+
+1-For Objects: Use the spread operator to copy the state and add or update keys.
+2-For Arrays: Use the spread operator to copy the array and add a value.

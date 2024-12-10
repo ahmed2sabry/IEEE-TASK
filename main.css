@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #54483a;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #005f73, #004351);
+  padding: 1rem;
+}
+
+.todo {
+  width: 100%;
+  max-width: 55rem;
+  margin: 10rem auto;
+  background-color: #fff;
+  padding: 4rem 3rem;
+  border-radius: 1rem;
+}
+.todo__heading {
+  color: #005f73;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.todo__img {
+  width: 4.5rem;
+  margin-left: 1rem;
+}
+
+.addtask {
+  background-color: #ddd;
+  padding-left: 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addtask__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+.addtask__button {
+  border: none;
+  outline: none;
+  padding: 1.6rem 5rem;
+  background-color: #76a897;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 10rem;
+  transition: all 0.2s;
+}
+.addtask__button:hover {
+  background-color: #85bdaa;
+}
+
+.list-container {
+  list-style: none;
+}
+.list-container li {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.2rem 0.8rem 1.2rem 5rem;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+.list-container li::before {
+  content: "";
+  position: absolute;
+  height: 2.8rem;
+  width: 2.8rem;
+  border: 1px solid currentColor;
+  line-height: 1;
+  border-radius: 50%;
+  top: 1.2rem;
+  left: 0.8rem;
+}
+.list-container li.checked {
+  color: #adb5bd;
+  text-decoration: line-through;
+}
+.list-container li.checked::before {
+  background-image: url(img/icons8-checkmark-48.png);
+  background-size: cover;
+  background-position: center;
+}
+.list-container li span {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.2rem;
+  color: currentColor;
+  text-align: center;
+  border-radius: 50%;
+}
+.list-container li span:hover {
+  background-color: #ddd;
+}/*# sourceMappingURL=main.css.map */
